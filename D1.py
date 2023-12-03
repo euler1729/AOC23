@@ -15,7 +15,7 @@ def extract_calibration_part_one(line):
                     calibration_sum += calibration_value
     
     return calibration_sum
-
+print("Part 1: ", extract_calibration_part_one('d1.txt'))
 
 ## Part 2
 word_to_digit = {
@@ -66,4 +66,4 @@ def extract_calibration_part_two(line):
             calibration_sum = calibration_sum + find_first_last_digits(line)
     return calibration_sum
 
-print(extract_calibration_part_two('d1.txt'))
+print("Part 2: ",extract_calibration_part_two('d1.txt'))
