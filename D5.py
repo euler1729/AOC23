@@ -80,7 +80,7 @@ def part2(file):
                         if node_right>0: ## right segment that doesn't overlap
                             tmp.append(Node2(end+1, node_right))
 
-                        newnode = Node2(start, end-start+1) ##segment that overlaps
+                        newnode = Node2(start, end-start+1) ## segment that overlaps
                         newnode.next = v + abs(u-start) ## maps to next layer
                         tmp.append(newnode)
                         length -= 1
